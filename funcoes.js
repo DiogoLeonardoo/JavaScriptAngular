@@ -1,18 +1,23 @@
-    ////////////////Potência////////////////////
-    function quadrado (valor) {
-        return valor * valor 
+function escrevaMeuNome (nome) {
+    return ("Meu nome é " + nome);
+}
+escrevaMeuNome("Diogo")
+escrevaMeuNome("Leonardo")
+
+
+
+
+function verificarIdade(idade) {
+    if(idade >= 18) {
+        console.log(escrevaMeuNome("Diogo ") + "e sou maior de idade")
+        
+    } else {
+        console.log(escrevaMeuNome("Diogo") + " e sou menor de idade")
     }
+}
 
-    const quadradoDeDez = quadrado(10);
-        console.log(quadradoDeDez);
+verificarIdade(12);
 
 
-//////////////////////////////Juros e Acrescimos////////////////////////////////////////
 
-    function incrementarJuros(valor,percentualJuros) { 
-        const valordeAcrescimo = (percentualJuros/100 ) * valor;  //Retorna o juros 
-        return valor + valordeAcrescimo
-    }
 
-    console.log(incrementarJuros(100,15))
-    console.log(incrementarJuros(300,30))
